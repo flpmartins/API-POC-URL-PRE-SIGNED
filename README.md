@@ -1,4 +1,4 @@
-POC Hey there! 👋 Welcome to my "POC" API, a cool project I'm working on to learn about AWS S3. This API, crafted with Node.js and Express, is all about creating signed URLs for secure access to resources. It's not finished yet, but it's buzzing with potential! 🚀
+API-POC-URL-PRE-SIGNED Hey there! 👋 Welcome to my "API-POC-URL-PRE-SIGNED" API, a cool project I'm working on to learn about AWS S3. This API, crafted with Node.js and Express, is all about creating signed URLs for secure access to resources. It's not finished yet, but it's buzzing with potential! 🚀
 
 Features AWS S3 Exploration: Dive into the AWS S3 world and discover how to generate signed URLs for super-secure resource access.
 
