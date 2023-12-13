@@ -1,0 +1,23 @@
+Resources:
+  DescompactFileFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: handlers/handleZipFile.handler
+      Runtime: nodejs16.x
+      Architectures:
+      - x86_64
+      MemorySize: 128
+      Timeout: 100
+      Description: Função para descompactar arquivos ZIP
+      Policies:
+        - S3ReadPolicy:
+            BucketName: !Ref flpmartins
+      Environment:
+        Variables:
+          S3_BUCKET: !Ref flpmartins
+      Events:
+        S3Event:
+          Type: S3
+          Properties:
+            Bucket: !Ref flpmartins
+            Events: s3:ObjectCreated:*
